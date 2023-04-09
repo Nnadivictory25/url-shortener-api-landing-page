@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .smHidden {
+        @apply sm:max-md:hidden;
+    }
+
+    .lgHidden {
+        @apply md:hidden;
+    }
+
+    .flex {
+        @apply items-center;
+    }
+}

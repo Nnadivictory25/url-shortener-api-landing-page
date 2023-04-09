@@ -1,0 +1,37 @@
+ul {
+    li {
+        transition: color .2s ease-in-out;
+        
+        &:hover {
+            color: #000;
+            cursor: pointer;
+        }
+    }
+}
+
+.mobileNav {
+    transition: all .2s ease-in-out !important;
+
+    ul {
+        li {
+            transition: color .2s ease-in-out;
+            
+            &:hover {
+                color: inherit !important;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &.notActive {
+        left: -100%;
+    }
+
+    &.active {
+        left: 5% !important;
+    }
+}
+
+button {
+    transition: opacity .2s ease-in-out;
+}
