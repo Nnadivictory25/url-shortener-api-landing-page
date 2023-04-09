@@ -29,7 +29,7 @@ const Navbar = () => {
 						</button>
 					</div>
 				</div>
-			</nav>
+			</nav> 
 
             <div className={`mobileNav w-[90%] transition-all ax-w-5xl mx-auto absolute ${navActive ? 'active' : 'notActive'} ${isWideScreen && 'hidden'}`}>
 				<div className='w-full rounded-lg bg-darkViolet text-white text-center font-bold py-8'>
