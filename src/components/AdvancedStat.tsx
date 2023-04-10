@@ -7,7 +7,7 @@ const AdvancedStat = () => {
 
     return (
         <section className="bg-slate-100 py-40 px-2">
-            <div className="header text-center w-[90%] max-w-xl mx-auto">
+            <div className="header text-center w-[90%] max-w-xl mx-auto mb-20">
                 <h2 className="font-bold text-2xl py-3">Advanced Statistics</h2>
                 <p className="text-greyishV">
                     Track how your links are performing accross the web with out advanced statistics dashboard.
@@ -32,7 +32,7 @@ const AdvancedStat = () => {
                 </div>
 
                 <div className="card max-w-xs z-30 bg-white rounded-md w-[85%] pt-12 pb-9 px-6 text-center lg:text-left relative lg:translate-y-20">
-                    <img className='absolute lg:right-52 bg-darkViolet rounded-full p-4 top-[-2.2rem] inset-x-0 mx-auto' src={customizeIcon} />
+                    <img className='absolute lg:right-52 bg-darkViolet rounded-full p-3 top-[-2.2rem] inset-x-0 mx-auto' src={customizeIcon} />
                     <h3 className="font-bold text-xl py-3">Fully Customizable</h3>
                     <p className="text-greyishV">
                         Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.

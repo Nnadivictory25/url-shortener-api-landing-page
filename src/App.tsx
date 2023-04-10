@@ -3,16 +3,20 @@ import './App.scss'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import AdvancedStat from './components/AdvancedStat'
+import Boost from './components/Boost'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <main className=''>
+    <main>
       <header>
         <Navbar />
+      </header>
         <Hero />
         <AdvancedStat />
-      </header>
+        <Boost />
+        <Footer/>
     </main>
   )
 }

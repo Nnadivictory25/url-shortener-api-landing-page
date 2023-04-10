@@ -18,6 +18,10 @@ module.exports = {
 				darkBlue: 'hsl(255, 11%, 22%)',
 				VdarkViolet: 'hsl(260, 8%, 14%)',
 			},
+			backgroundImage: {
+				'bgImgDesktop': "url('../assets/bg-boost-desktop.svg')",
+				'bgImgMobile': "url('../assets/bg-boost-mobile.svg')",
+			  },
 			fontFamily: {
 				sans: ['Poppins', 'sans-serif'],
 			},
