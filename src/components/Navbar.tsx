@@ -23,7 +23,7 @@ const Navbar = () => {
 					<RxHamburgerMenu size={25} className='lgHidden cursor-pointer' onClick={() => setNavActive(!navActive)} />
 
 					<div className='btns smHidden md:flexCenter gap-x-7'>
-						<button className='text-greyishV hover:text-black'>Login</button>
+						<button className='text-greyishV hover:text-black transition-colors'>Login</button>
 						<button className='text-white bg-cyan py-2 px-6 rounded-full hover:opacity-60'>
 							Sign Up
 						</button>
