@@ -12,7 +12,7 @@
         @apply md:hidden;
     }
 
-    .flex {
-        @apply items-center;
+    .flexCenter {
+        @apply flex items-center;
     }
 }
