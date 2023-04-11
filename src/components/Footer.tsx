@@ -13,7 +13,7 @@ const Footer = () => {
             <img src={logo} alt='logo iamge' />
 
             <div className="features text-center lg:text-left">
-                <h4 className="font-bold pb-3">Features</h4>
+                <h3 className="font-bold pb-3">Features</h3>
 
                 <ul className='text-grey flex flex-col gap-y-2'>
                     <li>Link Shortening</li>
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
             <div className="resources text-center lg:text-left">
-                <h4 className="font-bold pb-3">Resources</h4>
+                <h3 className="font-bold pb-3">Resources</h3>
 
                 <ul className='text-grey flex flex-col gap-y-2'>
                     <li>Blog</li>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
 
             <div className="company text-center lg:text-left">
-                <h4 className="font-bold pb-3">Company</h4>
+                <h3 className="font-bold pb-3">Company</h3>
 
                 <ul className='text-grey flex flex-col gap-y-2'>
                     <li>About</li>

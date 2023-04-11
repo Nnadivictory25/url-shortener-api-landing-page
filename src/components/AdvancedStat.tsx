@@ -92,8 +92,10 @@ const AdvancedStat = ({ onFormSubmit, links }: Props) => {
 			<div className='cardsCtn mt-14 flex flex-col lg:flex-row gap-x-8 gap-y-20 justify-center items-center relative'>
 				<div className='card max-w-xs z-30 bg-white rounded-md w-[85%] pt-12 pb-9 px-6 text-center lg:text-left relative'>
 					<img
+						
 						className='absolute lg:right-52 bg-darkViolet rounded-full p-4 top-[-2.2rem] inset-x-0 mx-auto'
 						src={brandRecIcon}
+						alt='icon '
 					/>
 					<h3 className='font-bold text-xl py-3'>Brand Recognition</h3>
 					<p className='text-greyishV'>
@@ -104,8 +106,10 @@ const AdvancedStat = ({ onFormSubmit, links }: Props) => {
 
 				<div className='card max-w-xs z-30 bg-white rounded-md w-[85%] pt-12 pb-9 px-6 text-center lg:text-left relative lg:translate-y-10'>
 					<img
+						
 						className='absolute lg:right-52 bg-darkViolet rounded-full p-4 top-[-2.2rem] inset-x-0 mx-auto'
 						src={detailIcon}
+						alt='icon '
 					/>
 					<h3 className='font-bold text-xl py-3'>Detailed Records</h3>
 					<p className='text-greyishV'>
@@ -117,8 +121,10 @@ const AdvancedStat = ({ onFormSubmit, links }: Props) => {
 
 				<div className='card max-w-xs z-30 bg-white rounded-md w-[85%] pt-12 pb-9 px-6 text-center lg:text-left relative lg:translate-y-20'>
 					<img
+						
 						className='absolute lg:right-52 bg-darkViolet rounded-full p-3 top-[-2.2rem] inset-x-0 mx-auto'
 						src={customizeIcon}
+						alt='icon '
 					/>
 					<h3 className='font-bold text-xl py-3'>Fully Customizable</h3>
 					<p className='text-greyishV'>
