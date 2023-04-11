@@ -1,4 +1,3 @@
-import { FormEvent, useRef } from 'react';
 import { z } from 'zod';
 import { FieldValues, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -11,7 +10,6 @@ import bgShortenMobile from '../assets/bg-shorten-mobile.svg';
 
 import useWindowWide from '../hooks/useWindowWidth';
 import { UrlData } from '../App';
-import Links from './Link';
 import Link from './Link';
 
 interface Props {
@@ -42,7 +40,9 @@ const AdvancedStat = ({ onFormSubmit, links }: Props) => {
     }
 
 	return (
-		<section className='bg-slate-100 pb-40 px-2'>
+        <section className='bg-slate-100 pb-40 px-2'>
+            
+
 			{/* url shortener elements container */}
 			<div className='w-[90%] max-w-5xl mx-auto'>
 				<div
