@@ -1,10 +1,12 @@
-ul {
-    li {
-        transition: color .2s ease-in-out;
-        
-        &:hover {
-            color: #000;
-            cursor: pointer;
+nav {
+    ul {
+        li {
+            transition: color .2s ease-in-out;
+            
+            &:hover {
+                color: #000;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -33,5 +35,27 @@ ul {
 }
 
 button {
+    position: relative !important;
     transition: opacity .2s ease-in-out;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9;
+        background-color: #fff;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+    }
+
+    &:hover {
+        &::before {
+            opacity: .4;
+        }
+    }
 }

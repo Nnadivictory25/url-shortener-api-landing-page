@@ -45,7 +45,7 @@ const Footer = () => {
 
             <div className="iconsCtn flexCenter gap-x-7">
                 {imgs.map(img => (
-                    <img src={img} alt="icon" />
+                    <img src={img} alt="icon" key={img} />
                 ))}
             </div>
 

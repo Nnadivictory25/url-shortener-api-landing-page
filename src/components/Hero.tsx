@@ -2,7 +2,7 @@ import illustration from '../assets/illustration-working.svg';
 
 const Hero = () => {
 	return (
-		<section className='lg:flex items-center flex-row-reverse gap-x-5 w-[90%] max-w-5xl mx-auto pb-20' >
+		<section className='lg:flex items-center flex-row-reverse gap-x-5 w-[90%] max-w-5xl mx-auto pb-28' >
 			<img className='lg:w-[55%] md:mt-5' src={illustration} alt='working illustration' />
 
 			<div className='writeUp mt-7 md:mt-0 text-center lg:text-left'>
