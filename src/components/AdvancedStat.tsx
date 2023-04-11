@@ -59,7 +59,7 @@ const AdvancedStat = ({ onFormSubmit, links }: Props) => {
 						className='w-[90%] mx-auto flex flex-col lg:flex-row gap-y-8 justify-between relative'>
                         <input
                             {...register('url')}
-							className={`bg-white border-2 rounded p-3 outline-none lg:w-[78%] ${errors.url && 'border-red placeholder:text-red'}`}
+							className={`bg-white border-2 rounded-lg p-3 outline-none lg:w-[78%] ${errors.url && 'border-red placeholder:text-red'}`}
 							placeholder='Shorten a link here...'
                         />
                         {errors.url && <p className="text-red absolute top-[3.2rem] text-sm italic">{errors.url.message}</p>}
