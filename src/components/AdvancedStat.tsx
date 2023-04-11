@@ -82,7 +82,7 @@ const AdvancedStat = ({ onFormSubmit, links }: Props) => {
 
 			{/* rest of section content */}
 			<div className='header text-center w-[90%] max-w-xl mx-auto mb-20 mt-10'>
-				<h2 className='font-bold text-2xl py-3'>Advanced Statistics</h2>
+				<h2 className='font-bold text-3xl py-3'>Advanced Statistics</h2>
 				<p className='text-greyishV'>
 					Track how your links are performing accross the web with out advanced
 					statistics dashboard.

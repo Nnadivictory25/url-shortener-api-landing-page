@@ -6,7 +6,7 @@ const Hero = () => {
 			<img className='lg:w-[55%] md:mt-5' src={illustration} alt='working illustration' />
 
 			<div className='writeUp mt-7 md:mt-0 text-center lg:text-left'>
-				<h1 className='text-3xl lg:text-5xl font-bold'>More than just shorter links</h1>
+				<h1 className='text-3xl lg:text-6xl font-bold'>More than just shorter links</h1>
 				<p className='py-3 text-greyishV'>
 					Build your brand's recognition and get detailed insights on how your
 					links are performing
