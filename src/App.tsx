@@ -9,15 +9,15 @@ import Boost from './components/Boost';
 import Footer from './components/Footer';
 
 interface urlDataFetch {
-  result: {
-    full_short_link: string;
+	result: {
+		full_short_link: string;
 		original_link: string;
-    }
+	};
 }
 
 export interface UrlData {
-  full_short_link: string;
-  original_link: string;
+	full_short_link: string;
+	original_link: string;
 }
 
 interface UrlQuery {
@@ -25,17 +25,17 @@ interface UrlQuery {
 }
 
 function App() {
-	const [links, setLinks] = useState<UrlData[]>([])
+	const [links, setLinks] = useState<UrlData[]>([]);
 	const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(false);
-  
-  useEffect(() => {
-    const data = localStorage.getItem('links')
-    
-    const storedLinks = data ? JSON.parse(data) : []
-    console.log(storedLinks)
-    storedLinks.length > 0 && setLinks(storedLinks)
-  }, [])
+	const [error, setError] = useState(false);
+
+	useEffect(() => {
+		const data = localStorage.getItem('links');
+
+		const storedLinks = data ? JSON.parse(data) : [];
+		console.log(storedLinks);
+		storedLinks.length > 0 && setLinks(storedLinks);
+	}, []);
 
 	const getUrlData = (url: string) => {
 		const controller = new AbortController();
@@ -48,29 +48,29 @@ function App() {
 				},
 			})
 			.then((res) => {
-        const { data } = res;
-        const {original_link, full_short_link} = data.result
-        setLinks([{original_link, full_short_link}, ...links]);
+				const { data } = res;
+				const { original_link, full_short_link } = data.result;
+				setLinks([{ original_link, full_short_link }, ...links]);
 				setIsLoading(false);
 			})
 			.catch((err) => {
 				if (err.message !== 'canceled') {
-          alert('something went wrong ' + err.message);
-          setError(true)
+					alert('something went wrong ' + err.message);
+					setError(true);
 				}
 			})
 			.finally(() => {
 				setIsLoading(false);
 			});
-  };
-  
-  useEffect(() => {
-    localStorage.setItem('links', JSON.stringify(links));
-  }, [links])
+	};
+
+	useEffect(() => {
+		localStorage.setItem('links', JSON.stringify(links));
+	}, [links]);
 
 	const handleSubmit = (url: string) => {
 		console.log(url);
-    getUrlData(url);
+		getUrlData(url);
 	};
 
 	return (
