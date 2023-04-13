@@ -35,7 +35,7 @@ const Link = ({ link }: Props) => {
 
 	return (
 		<div className='rounded-md bg-white text-black lg:p-3 pb-4 lg:flexCenter flex justify-between flex-col lg:flex-row'>
-			<div className='left p-3'>
+			<div className='left p-3 w-[95%] lg:w-full overflow-hidden'>
 				<p>{link.original_link}</p>
 			</div>
 			{!isWideScreen && <hr className='relative w-full'></hr>}
