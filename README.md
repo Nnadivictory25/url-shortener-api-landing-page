@@ -53,7 +53,7 @@ Users should be able to:
 
 ### What I learned
 
-- I learnt about controlling an elelement's position using relative instead of absolute/fixed positioning
+- I learnt about controlling an element's position using relative instead of absolute/fixed positioning
 - I also learn't that the copy to clipboard API doesn't work in LocalHost or insecure connections
 - Also learn't some cool button hover effect useing ::before.
 
